@@ -26,7 +26,17 @@ function Home() {
     <picture className="background">
      <img src="/images/BUR_001.jpg" />
     </picture>
-    <button>See menu and order</button>
+    <button
+     data-glf-cuid="c33b7577-b853-4b53-8cbb-91f09d948205"
+     data-glf-ruid="72f91acd-ccdd-44c2-980c-09249f02a23f"
+    >
+     See menu & order
+    </button>
+    <script
+     src="https://www.fbgcdn.com/embedder/js/ewm2.js"
+     defer
+     async
+    ></script>
    </section>
 
    <section className="content capped">
@@ -52,7 +62,7 @@ function Home() {
      </div>
     </div>
     <div className="addressAndPhone">
-     <a href="tel:003545195195 ">S: 5 19 5 19 5</a>
+     <a href="tel:+3545195195 ">T: 5 19 5 19 5</a>
      <a href="https://goo.gl/maps/7eAyi66XHkNxHxu99" target="_blank">
       Vesturgata 12
      </a>
