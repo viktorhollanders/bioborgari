@@ -1,203 +1,230 @@
 import Head from 'next/head'
 
-const Home = () => (
-  <div className="container">
-    <Head>
-      <title>Create Next App</title>
-      <link rel="icon" href="/favicon.ico" />
-    </Head>
+function Home() {
+ return (
+  <div>
+   <Head>
+    <title>BioBorgari</title>
+    <link rel="icon" href="/favicon.ico" />
+    <meta
+     key="description"
+     name="description"
+     content="Burgerjoint serving organic meat and veggie burgers."
+    />
+   </Head>
 
-    <main>
-      <h1 className="title">
-        Welcome to <a href="https://nextjs.org">Next.js!</a>
-      </h1>
+   <header>
+    <img className="logo" src="/icons/BioBorgari-log.png" alt="logo" />
 
-      <p className="description">
-        Get started by editing <code>pages/index.js</code>
-      </p>
+    <div className="opening-houers">
+     <p>Wednesday - Sunday 11:30 - 21:00</p>
+     <p>Monday & Thuseday closed</p>
+    </div>
+   </header>
 
-      <div className="grid">
-        <a href="https://nextjs.org/docs" className="card">
-          <h3>Documentation &rarr;</h3>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
+   <section className="orderNow">
+    <picture className="background">
+     <img src="/images/BUR_001.jpg" />
+    </picture>
+    <button>See menu and order</button>
+   </section>
 
-        <a href="https://nextjs.org/learn" className="card">
-          <h3>Learn &rarr;</h3>
-          <p>Learn about Next.js in an interactive course with quizzes!</p>
-        </a>
+   <section className="content capped">
+    <p>
+     Organic Burger Joint in Reykjavík promoting sustainability, food
+     sovereignty and well-being for our customers and planet. 🌍
+    </p>
+   </section>
 
-        <a
-          href="https://github.com/zeit/next.js/tree/master/examples"
-          className="card"
-        >
-          <h3>Examples &rarr;</h3>
-          <p>Discover and deploy boilerplate example Next.js projects.</p>
-        </a>
-
-        <a
-          href="https://zeit.co/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          className="card"
-        >
-          <h3>Deploy &rarr;</h3>
-          <p>
-            Instantly deploy your Next.js site to a public URL with ZEIT Now.
-          </p>
-        </a>
-      </div>
-    </main>
-
-    <footer>
-      <a
-        href="https://zeit.co?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Powered by <img src="/zeit.svg" alt="ZEIT Logo" />
+   <footer>
+    <div className="socialMedia">
+     <h2>Find Us</h2>
+     <div>
+      <a href="https://www.facebook.com/bioborgari/" target="_blank">
+       <img src="/icons/facebook.png" />
       </a>
-    </footer>
+      <a href="https://www.instagram.com/bioborgari/?hl=en" target="_blank">
+       <img src="/icons/instagram.png" />
+      </a>
+      <a href="https://twitter.com/bioborgari" target="_blank">
+       <img src="/icons/twitter.png" />
+      </a>
+     </div>
+    </div>
+    <div className="addressAndPhone">
+     <a href="tel:003545195195 ">S: 5 19 5 19 5</a>
+     <a href="https://goo.gl/maps/7eAyi66XHkNxHxu99" target="_blank">
+      Vesturgata 12
+     </a>
+    </div>
+   </footer>
 
-    <style jsx>{`
-      .container {
-        min-height: 100vh;
-        padding: 0 0.5rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
+   <style jsx>{`
+    /* commomn clasess */
 
-      main {
-        padding: 5rem 0;
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
+    .capped {
+     padding: 0 16px;
+    }
 
-      footer {
-        width: 100%;
-        height: 100px;
-        border-top: 1px solid #eaeaea;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
+    header {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     flex-direction: column;
 
-      footer img {
-        margin-left: 0.5rem;
-      }
+     height: 95vh;
+    }
 
-      footer a {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
+    .logo {
+     width: 262px;
+     height: 59px;
 
-      a {
-        color: inherit;
-        text-decoration: none;
-      }
+     margin-top: 30vh;
+    }
 
-      .title a {
-        color: #0070f3;
-        text-decoration: none;
-      }
+    .opening-houers {
+     margin-bottom: 50px;
+    }
 
-      .title a:hover,
-      .title a:focus,
-      .title a:active {
-        text-decoration: underline;
-      }
+    .opening-houers p:first-child {
+     font-weight: 700;
+    }
 
-      .title {
-        margin: 0;
-        line-height: 1.15;
-        font-size: 4rem;
-      }
+    .opening-houers p:last-child {
+     font-weight: 300;
+     color: #999595;
+    }
 
-      .title,
-      .description {
-        text-align: center;
-      }
+    .orderNow {
+     position: relative;
+    }
 
-      .description {
-        line-height: 1.5;
-        font-size: 1.5rem;
-      }
+    .background img {
+     width: 100%;
+     height: calc(100vh - (20px * 2));
+     overflow: hidden;
+     object-fit: cover;
+    }
 
-      code {
-        background: #fafafa;
-        border-radius: 5px;
-        padding: 0.75rem;
-        font-size: 1.1rem;
-        font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
-          DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
-      }
+    .orderNow button {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     -ms-transform: translate(-50%, -50%);
+    }
 
-      .grid {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
+    button {
+     width: 310px;
+     font-size: 28px;
+     background: #e8994b;
+     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+     border-radius: 4px;
+     padding: 20px 30px;
 
-        max-width: 800px;
-        margin-top: 3rem;
-      }
+     border: none;
+    }
 
-      .card {
-        margin: 1rem;
-        flex-basis: 45%;
-        padding: 1.5rem;
-        text-align: left;
-        color: inherit;
-        text-decoration: none;
-        border: 1px solid #eaeaea;
-        border-radius: 10px;
-        transition: color 0.15s ease, border-color 0.15s ease;
-      }
+    .content p {
+     line-height: 1.5;
+     margin: 90px 0;
+    }
 
-      .card:hover,
-      .card:focus,
-      .card:active {
-        color: #0070f3;
-        border-color: #0070f3;
-      }
+    .socialMedia h2 {
+     margin-bottom: 40px;
+    }
 
-      .card h3 {
-        margin: 0 0 1rem 0;
-        font-size: 1.5rem;
-      }
+    .socialMedia div {
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+    }
 
-      .card p {
-        margin: 0;
-        font-size: 1.25rem;
-        line-height: 1.5;
-      }
+    .socialMedia a img {
+     height: 40px;
+     width: auto;
+    }
 
-      @media (max-width: 600px) {
-        .grid {
-          width: 100%;
-          flex-direction: column;
-        }
-      }
-    `}</style>
+    .socialMedia a:nth-child(2) {
+     margin: 0 40px;
+    }
 
-    <style jsx global>{`
-      html,
-      body {
-        padding: 0;
-        margin: 0;
-        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-          Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-      }
+    .addressAndPhone {
+     display: flex;
+     flex-direction: column;
+     margin-top: 60px;
+     margin-bottom: 30px;
+    }
 
-      * {
-        box-sizing: border-box;
-      }
-    `}</style>
+    .addressAndPhone a {
+     margin-bottom: 16px;
+    }
+
+    a {
+     text-decoration: none;
+     color: #000;
+    }
+
+    a:hover,
+    a:focus,
+    a:active {
+     courur: pointer;
+    }
+
+    @media screen and (min-width: 600px) {
+     .capped {
+      padding: 0 19%;
+     }
+
+     .addressAndPhone {
+      font-size: 24px;
+
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      margin: 60px 30px 30px 30px;
+     }
+    }
+
+    @media screen and (min-width: 800px) {
+     .capped {
+      padding: 0 19%;
+     }
+
+     .logo {
+      width: 590px;
+      height: 133px;
+     }
+
+     .content p {
+      font-size: 32px;
+     }
+
+     .opening-houers {
+      font-size: 24px;
+     }
+
+     .addressAndPhone {
+      margin: 90px 100px 60px 100px;
+     }
+    }
+   `}</style>
+
+   <style jsx global>{`
+    html,
+    body {
+     padding: 0;
+     margin: 0;
+     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+      Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+     text-align: center;
+    }
+
+    * {
+     box-sizing: border-box;
+    }
+   `}</style>
   </div>
-)
+ )
+}
 
 export default Home
