@@ -128,11 +128,18 @@ function Home() {
      width: 310px;
      font-size: 28px;
      background: #e8994b;
+     color: #fff;
      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
      border-radius: 4px;
      padding: 20px 30px;
 
      border: none;
+    }
+
+    button:hover,
+    button:active,
+    button:focus {
+     background: #f2993f;
     }
 
     .content p {
