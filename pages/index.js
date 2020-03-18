@@ -18,7 +18,7 @@ function Home() {
 
     <div className="opening-houers">
      <p>Wednesday - Sunday 11:30 - 21:00</p>
-     <p>Monday & Thuseday closed</p>
+     <p>Monday & Tuesday closed</p>
     </div>
    </header>
 
@@ -77,12 +77,12 @@ function Home() {
     }
 
     header {
+     height: 80vh;
+
      display: flex;
      align-items: center;
      justify-content: space-between;
      flex-direction: column;
-
-     height: 95vh;
     }
 
     .logo {
@@ -194,8 +194,6 @@ function Home() {
      }
 
      .addressAndPhone {
-      font-size: 24px;
-
       flex-direction: row-reverse;
       justify-content: space-between;
       margin: 60px 30px 30px 30px;
@@ -204,7 +202,11 @@ function Home() {
 
     @media screen and (min-width: 800px) {
      .capped {
-      padding: 0 19%;
+      padding: 0 23%;
+     }
+
+     header {
+      height: 90vh;
      }
 
      .logo {
@@ -213,7 +215,7 @@ function Home() {
      }
 
      .content p {
-      font-size: 32px;
+      font-size: 24px;
      }
 
      .opening-houers {
@@ -221,6 +223,7 @@ function Home() {
      }
 
      .addressAndPhone {
+      font-size: 24px;
       margin: 90px 100px 60px 100px;
      }
     }
