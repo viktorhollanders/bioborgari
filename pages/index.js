@@ -10,7 +10,7 @@ function Home() {
     <meta
      key="description"
      name="description"
-     content="Burgerjoint serving organic meat and veggie burgers."
+     content="Burgerjoint serving organic meat and veggie burgers, open Wed - Sun 11.30-21.00 closed Mon - Tue, Vesturgata 12 Tel: 5 19 5 19 5."
     />
 
     <script
