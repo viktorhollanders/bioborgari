@@ -6,10 +6,27 @@ function Home() {
    <Head>
     <title>BioBorgari</title>
     <link rel="icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <meta
      key="description"
      name="description"
      content="Burgerjoint serving organic meat and veggie burgers."
+    />
+
+    <script
+     async
+     src="https://www.googletagmanager.com/gtag/js?id=UA-161195296-1"
+    />
+    <script
+     dangerouslySetInnerHTML={{
+      __html: `
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+
+                gtag('config', 'UA-161195296-1');
+              `,
+     }}
     />
    </Head>
 
