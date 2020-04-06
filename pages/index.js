@@ -42,7 +42,11 @@ function Home() {
 
    <section className="orderNow">
     <picture className="background">
-     <img src="/images/BUR_001.jpg" />
+     <img
+      srcSrt="images/BUR__001-1x.jpg 1x, images/BUR__001-2x.jpg 2x"
+      src="images/BUR_001.jpg"
+      alt="image of a burger"
+     />
     </picture>
     <button
      data-glf-cuid="c33b7577-b853-4b53-8cbb-91f09d948205"
@@ -82,7 +86,7 @@ function Home() {
     <div className="addressAndPhone">
      <a href="tel:+3545195195 ">T: 5 19 5 19 5</a>
      <a href="https://goo.gl/maps/7eAyi66XHkNxHxu99" target="_blank">
-      Vesturgata 12
+      Vesturgata 12, 101 Reykjavík
      </a>
     </div>
    </footer>
@@ -112,6 +116,10 @@ function Home() {
 
     .opening-houers {
      margin-bottom: 50px;
+    }
+
+    .opening-houers p {
+     margin: 15px 0;
     }
 
     .opening-houers p:first-child {
@@ -161,6 +169,7 @@ function Home() {
     }
 
     .content p {
+     font-size: 24px;
      line-height: 1.5;
      margin: 90px 0;
     }
