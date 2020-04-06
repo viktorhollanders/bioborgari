@@ -42,11 +42,7 @@ function Home() {
 
    <section className="orderNow">
     <picture className="background">
-     <img
-      srcSrt="images/BUR__001-1x.jpg 1x, images/BUR__001-2x.jpg 2x"
-      src="images/BUR_001.jpg"
-      alt="image of a burger"
-     />
+     <img src="/images/BUR_001-1x.jpg" alt="image of a burger" />
     </picture>
     <button
      data-glf-cuid="c33b7577-b853-4b53-8cbb-91f09d948205"
