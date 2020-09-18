@@ -35,7 +35,7 @@ function Home() {
     <img className="logo" src="/icons/BioBorgari-log.png" alt="logo" />
 
     <div className="opening-houers">
-     <p>Wednesday - Sunday 11:30 - 21:00</p>
+     <p>Wednesday – Sunday 11:30 – 21:00</p>
      <p>Monday & Tuesday closed</p>
     </div>
    </header>
