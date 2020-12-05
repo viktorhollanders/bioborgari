@@ -13,23 +13,14 @@ function Home() {
      name="description"
      content="Burgerjoint serving organic meat and veggie burgers, open Wed - Sun 11.30-21.00 closed Mon - Tue, Vesturgata 12 Tel: 5 19 5 19 5."
     />
-
-    <script
-     async
-     src="https://www.googletagmanager.com/gtag/js?id=UA-161195296-1"
-    />
-    <script
-     dangerouslySetInnerHTML={{
-      __html: `
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('js', new Date());
-
-                gtag('config', 'UA-161195296-1');
-              `,
-     }}
-    />
    </Head>
+
+   <div id="banner">
+    <p id="banner__content">
+     We will be closed Sunday 6th of December due to staff party. Gleðilegt jól!
+     ☺️
+    </p>
+   </div>
 
    <header>
     <img className="logo" src="/icons/BioBorgari-log.png" alt="logo" />
@@ -81,6 +72,7 @@ function Home() {
     </div>
     <div className="addressAndPhone">
      <a href="tel:+3545195195 ">T: 5 19 5 19 5</a>
+     <a href="mailto:bioborgari@bioborgari.com">bioborgari@bioborgari.com</a>
      <a href="https://goo.gl/maps/7eAyi66XHkNxHxu99" target="_blank">
       Vesturgata 12, 101 Reykjavík
      </a>
@@ -94,6 +86,26 @@ function Home() {
      padding: 0 16px;
     }
 
+    /* Banner */
+
+    #banner {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+
+     background-color: #000;
+    }
+
+    #banner__content {
+     color: #fff;
+     margin: 0 auto;
+     max-width: 800px;
+     padding: 15px;
+    }
+
+    /* Main  */
+
     header {
      height: 80vh;
 
@@ -101,6 +113,8 @@ function Home() {
      align-items: center;
      justify-content: space-between;
      flex-direction: column;
+
+     padding-top: 70px;
     }
 
     .logo {
