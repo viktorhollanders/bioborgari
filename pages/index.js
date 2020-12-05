@@ -17,10 +17,8 @@ function Home() {
 
    <div id="banner">
     <p id="banner__content">
-     We will be closed Sunday 6th of December due to staff party. Gleðilegt jól!
-     ☺️
+     We will be closed Sunday 6th of December due to staff party. ☺️
     </p>
-    <button></button>
    </div>
 
    <header>
@@ -95,15 +93,21 @@ function Home() {
      top: 0;
      left: 0;
      width: 100%;
+     padding: 25px;
 
      background-color: #000;
+
+     display: flex;
+     flex-direction: column;
     }
 
     #banner__content {
      color: #fff;
+     text-transform: uppercase;
+     font-weight: 500;
+
      margin: 0 auto;
      max-width: 800px;
-     padding: 15px;
     }
 
     /* Main  */
