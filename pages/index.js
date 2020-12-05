@@ -20,6 +20,7 @@ function Home() {
      We will be closed Sunday 6th of December due to staff party. Gleðilegt jól!
      ☺️
     </p>
+    <button></button>
    </div>
 
    <header>
@@ -36,6 +37,7 @@ function Home() {
      <img src="/images/BUR_001-1x.jpg" alt="image of a burger" />
     </picture>
     <button
+     className="button__order"
      data-glf-cuid="c33b7577-b853-4b53-8cbb-91f09d948205"
      data-glf-ruid="72f91acd-ccdd-44c2-980c-09249f02a23f"
     >
@@ -160,7 +162,7 @@ function Home() {
      -ms-transform: translate(-50%, -50%);
     }
 
-    button {
+    .button__order {
      width: 310px;
      font-size: 28px;
      background: #e8994b;
@@ -172,10 +174,14 @@ function Home() {
      border: none;
     }
 
-    button:hover,
-    button:active,
-    button:focus {
+    .button__order:active,
+    .button__order:focus {
      background: #f2993f;
+    }
+
+    .button__order:hover {
+     background: #f2993f;
+     cursor: pointer;
     }
 
     .content p {
