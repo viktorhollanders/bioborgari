@@ -15,12 +15,6 @@ function Home() {
     />
    </Head>
 
-   <div id="banner">
-    <p id="banner__content">
-     We will be closed Sunday 6th of December due to staff party. ☺️
-    </p>
-   </div>
-
    <header>
     <img className="logo" src="/icons/BioBorgari-log.png" alt="logo" />
 
