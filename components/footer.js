@@ -74,8 +74,13 @@ export default function Footer() {
 
     @media screen and (min-width: 800px) {
      .addressAndPhone {
-      font-size: 24px;
       margin: 90px 100px 60px 100px;
+     }
+    }
+
+    @media screen and (min-width: 1000px) {
+     .addressAndPhone {
+      font-size: 24px;
      }
     }
    `}</style>
