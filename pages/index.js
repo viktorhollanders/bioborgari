@@ -47,12 +47,6 @@ function Home() {
    <Footer />
 
    <style jsx>{`
-    /* commomn clasess */
-
-    .capped {
-     padding: 0 16px;
-    }
-
     /* Main  */
 
     .orderNow {

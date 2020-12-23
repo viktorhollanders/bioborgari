@@ -21,3 +21,9 @@ a:focus,
 a:active {
  cursor: pointer;
 }
+
+/* global classes */
+
+.capped {
+ padding: 0 16px;
+}
