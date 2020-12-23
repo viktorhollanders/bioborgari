@@ -1,4 +1,6 @@
 import Head from 'next/head'
+import Header from '../components/header'
+import Footer from '../components/footer'
 
 function Home() {
  return (
@@ -15,14 +17,7 @@ function Home() {
     />
    </Head>
 
-   <header>
-    <img className="logo" src="/icons/BioBorgari-log.png" alt="logo" />
-
-    <div className="opening-houers">
-     <p>Wednesday – Sunday 11:30 – 21:00</p>
-     <p>Monday & Tuesday closed</p>
-    </div>
-   </header>
+   <Header />
 
    <section className="orderNow">
     <picture className="background">
@@ -49,29 +44,7 @@ function Home() {
     </p>
    </section>
 
-   <footer>
-    <div className="socialMedia">
-     <h2>Find Us</h2>
-     <div>
-      <a href="https://www.facebook.com/bioborgari/" target="_blank">
-       <img src="/icons/facebook.png" />
-      </a>
-      <a href="https://www.instagram.com/bioborgari/?hl=en" target="_blank">
-       <img src="/icons/instagram.png" />
-      </a>
-      <a href="https://twitter.com/bioborgari" target="_blank">
-       <img src="/icons/twitter.png" />
-      </a>
-     </div>
-    </div>
-    <div className="addressAndPhone">
-     <a href="tel:+3545195195 ">T: 5 19 5 19 5</a>
-     <a href="mailto:bioborgari@bioborgari.com">bioborgari@bioborgari.com</a>
-     <a href="https://goo.gl/maps/7eAyi66XHkNxHxu99" target="_blank">
-      Vesturgata 12, 101 Reykjavík
-     </a>
-    </div>
-   </footer>
+   <Footer />
 
    <style jsx>{`
     /* commomn clasess */
@@ -80,66 +53,7 @@ function Home() {
      padding: 0 16px;
     }
 
-    /* Banner */
-
-    #banner {
-     position: absolute;
-     top: 0;
-     left: 0;
-     width: 100%;
-     padding: 25px;
-
-     background-color: #000;
-
-     display: flex;
-     flex-direction: column;
-    }
-
-    #banner__content {
-     color: #fff;
-     text-transform: uppercase;
-     font-weight: 500;
-
-     margin: 0 auto;
-     max-width: 800px;
-    }
-
     /* Main  */
-
-    header {
-     height: 80vh;
-
-     display: flex;
-     align-items: center;
-     justify-content: space-between;
-     flex-direction: column;
-
-     padding-top: 70px;
-    }
-
-    .logo {
-     width: 262px;
-     height: 59px;
-
-     margin-top: 30vh;
-    }
-
-    .opening-houers {
-     margin-bottom: 50px;
-    }
-
-    .opening-houers p {
-     margin: 15px 0;
-    }
-
-    .opening-houers p:first-child {
-     font-weight: 700;
-    }
-
-    .opening-houers p:last-child {
-     font-weight: 300;
-     color: #999595;
-    }
 
     .orderNow {
      position: relative;
@@ -188,56 +102,9 @@ function Home() {
      margin: 90px 0;
     }
 
-    .socialMedia h2 {
-     margin-bottom: 40px;
-    }
-
-    .socialMedia div {
-     display: flex;
-     flex-direction: row;
-     justify-content: center;
-    }
-
-    .socialMedia a img {
-     height: 40px;
-     width: auto;
-    }
-
-    .socialMedia a:nth-child(2) {
-     margin: 0 40px;
-    }
-
-    .addressAndPhone {
-     display: flex;
-     flex-direction: column;
-     margin-top: 60px;
-     margin-bottom: 30px;
-    }
-
-    .addressAndPhone a {
-     margin-bottom: 16px;
-    }
-
-    a {
-     text-decoration: none;
-     color: #000;
-    }
-
-    a:hover,
-    a:focus,
-    a:active {
-     courur: pointer;
-    }
-
     @media screen and (min-width: 600px) {
      .capped {
       padding: 0 19%;
-     }
-
-     .addressAndPhone {
-      flex-direction: row-reverse;
-      justify-content: space-between;
-      margin: 60px 30px 30px 30px;
      }
     }
 
@@ -262,26 +129,6 @@ function Home() {
      .opening-houers {
       font-size: 24px;
      }
-
-     .addressAndPhone {
-      font-size: 24px;
-      margin: 90px 100px 60px 100px;
-     }
-    }
-   `}</style>
-
-   <style jsx global>{`
-    html,
-    body {
-     padding: 0;
-     margin: 0;
-     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-      Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-     text-align: center;
-    }
-
-    * {
-     box-sizing: border-box;
     }
    `}</style>
   </div>
