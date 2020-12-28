@@ -70,7 +70,7 @@ function Home() {
      text-transform: uppercase;
      font-weight: 500;
      margin: 0 auto;
-     max-width: 800px;
+     max-width: 412px;
      text-align: left;
      line-height: 1.7;
     }
@@ -124,17 +124,7 @@ function Home() {
      margin: 90px 0;
     }
 
-    @media screen and (min-width: 600px) {
-     .capped {
-      padding: 0 19%;
-     }
-    }
-
     @media screen and (min-width: 800px) {
-     .capped {
-      padding: 0 23%;
-     }
-
      header {
       height: 90vh;
      }
@@ -150,6 +140,12 @@ function Home() {
 
      .opening-houers {
       font-size: 24px;
+     }
+    }
+
+    @media screen and (min-width: 900px) {
+     #banner__content {
+      max-width: 1000px;
      }
     }
    `}</style>
