@@ -1,8 +1,10 @@
+import Prismic from 'prismic-javascript'
 import Head from 'next/head'
 import Header from '../components/header'
 import Footer from '../components/footer'
+import { client } from '../prismic-configuration'
 
-function Home() {
+function Home(homeResponse) {
  return (
   <div>
    <Head>
@@ -18,9 +20,7 @@ function Home() {
    </Head>
 
    <div id="banner">
-    <p id="banner__content">
-     We will be closed Sunday 6th of December due to staff party. ☺️
-    </p>
+    <p id="banner__content">{homeResponse.home_page_text}</p>
    </div>
 
    <Header />
@@ -152,6 +152,16 @@ function Home() {
    `}</style>
   </div>
  )
+}
+
+export async function getStaticProps() {
+ const homeResponse = await client.getSingle('homepage')
+
+ return {
+  props: {
+   homeResponse,
+  },
+ }
 }
 
 export default Home
