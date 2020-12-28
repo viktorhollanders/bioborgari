@@ -2250,7 +2250,7 @@ cross-fetch@3.0.5:
   dependencies:
     node-fetch "2.6.0"
 
-cross-fetch@3.0.6:
+cross-fetch@3.0.6, cross-fetch@^3.0.5:
   version "3.0.6"
   resolved "https://registry.yarnpkg.com/cross-fetch/-/cross-fetch-3.0.6.tgz#3a4040bc8941e653e0e9cf17f29ebcd177d3365c"
   integrity sha512-KBPUbqgFjzWlVcURG+Svp9TlhA5uliYtiNx/0r8nv0pdypeQCRJ9IaSIc3q/x3q8t3F75cHuwxVql1HFGHCNJQ==
@@ -4775,6 +4775,13 @@ prettier@^2.1.2:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.1.2.tgz#3050700dae2e4c8b67c4c3f666cdb8af405e1ce5"
   integrity sha512-16c7K+x4qVlJg9rEbXl7HEGmQyZlG4R9AgP+oHKRMsMsuk8s+ATStlf1NpDqyBI1HpVyfjLOeMhH2LvuNvV5Vg==
+
+prismic-javascript@^3.0.2:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/prismic-javascript/-/prismic-javascript-3.0.2.tgz#a6dcc98014a2bbcc6232954d9295b56cde453390"
+  integrity sha512-9RpituEVE/eZAlj+vUVy61z2IQJdL0zRYuy+IHdiUA7/37zoiCE/Z0AbI0zAWyi5UDXizgQ2TuQTLkOm62KGwA==
+  dependencies:
+    cross-fetch "^3.0.5"
 
 process-nextick-args@~2.0.0:
   version "2.0.1"
