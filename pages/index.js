@@ -17,13 +17,6 @@ function Home() {
     />
    </Head>
 
-   <div id="banner">
-    <p id="banner__content">
-     We will be closed during the winter holidays. We will open again Wednesday
-     6th of Janúar.
-    </p>
-   </div>
-
    <Header />
 
    <section className="orderNow">
