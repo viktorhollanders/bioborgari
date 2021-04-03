@@ -17,6 +17,13 @@ function Home() {
     />
    </Head>
 
+   <div id="banner">
+    <p id="banner__content">
+     The restaurant will remain closed this Easter week. We will open again
+     Wednesday 7. April
+    </p>
+   </div>
+
    <Header />
 
    <section className="orderNow">
