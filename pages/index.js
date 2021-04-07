@@ -17,13 +17,6 @@ function Home() {
     />
    </Head>
 
-   <div id="banner">
-    <p id="banner__content">
-     The restaurant will remain closed this Easter week. We will open again
-     Wednesday 7. April
-    </p>
-   </div>
-
    <Header />
 
    <section className="orderNow">
@@ -54,27 +47,6 @@ function Home() {
    <Footer />
 
    <style jsx>{`
-    /* Banner */
-    #banner {
-     position: absolute;
-     top: 0;
-     left: 0;
-     width: 100%;
-     padding: 25px;
-     background-color: #000;
-     display: flex;
-     flex-direction: column;
-    }
-    #banner__content {
-     color: #fff;
-     text-transform: uppercase;
-     font-weight: 500;
-     margin: 0 auto;
-     max-width: 412px;
-     text-align: left;
-     line-height: 1.7;
-    }
-
     /* Main  */
 
     .orderNow {
