@@ -2,9 +2,6 @@ export default function Header({ props }) {
   // console.log(props.data);
   return (
     <div>
-      <div id="banner">
-        <p id="banner__content">{props.banner_text}</p>
-      </div>
       <header>
         <img className="logo" src="/icons/BioBorgari-log.png" alt="logo" />
         <div className="opening-houers">
@@ -13,25 +10,6 @@ export default function Header({ props }) {
         </div>
       </header>
       <style jsx>{`
-        /* Banner */
-        #banner {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          padding: 25px;
-          background-color: #000;
-          display: flex;
-          flex-direction: column;
-        }
-        #banner__content {
-          color: #fff;
-          text-transform: uppercase;
-          font-weight: 500;
-          margin: 0 auto;
-          max-width: 800px;
-        }
-
         /* Header */
 
         header {
